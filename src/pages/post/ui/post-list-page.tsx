@@ -1,7 +1,7 @@
 import { Heading } from '@/src/shared/ui/heading';
 import { Suspense } from 'react';
 import { Spinner } from '@/src/shared/ui/spinner';
-import { PostList } from '@/src/widgets/article';
+import { PostList } from '@/src/widgets/post';
 export const PostListPage = async () => {
   return (
     <>
