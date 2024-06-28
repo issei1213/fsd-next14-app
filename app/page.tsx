@@ -1,4 +1,4 @@
-import { PostListPage } from '@/src/pages/post';
+import { PostListPage } from '@/pages/post';
 
 export default function Page() {
   return <PostListPage />;

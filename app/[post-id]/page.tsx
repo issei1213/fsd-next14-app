@@ -1,4 +1,4 @@
-import { PostDetailPage } from '@/src/pages/post/ui/post-detail-page';
+import { PostDetailPage } from '@/pages/post/ui/post-detail-page';
 
 type Props = {
   params: {

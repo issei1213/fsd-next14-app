@@ -1,4 +1,4 @@
-import { getPostList } from '@/src/entities/post';
+import { getPostList } from '@/entities/post';
 
 export const PostList = async () => {
   const postList = await getPostList();

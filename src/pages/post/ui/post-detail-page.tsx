@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
 
-import { Heading } from '@/src/shared/ui/heading';
-import { PostDetail } from '@/src/widgets/post';
-import { Spinner } from '@/src/shared/ui/spinner';
+import { Heading } from '@/shared/ui/heading';
+import { PostDetail } from '@/widgets/post';
+import { Spinner } from '@/shared/ui/spinner';
 
 type Props = {
   postId: string;

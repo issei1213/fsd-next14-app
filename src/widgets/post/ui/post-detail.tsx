@@ -1,4 +1,4 @@
-import { getPostDetail } from '@/src/entities/post';
+import { getPostDetail } from '@/entities/post';
 
 type Props = {
   id: string;
