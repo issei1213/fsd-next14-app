@@ -1,4 +1,4 @@
-import { PostDetailPage } from '@/pages/post';
+import { PostUpdatePage } from '@/pages/post';
 
 type Props = {
   params: {
@@ -6,5 +6,5 @@ type Props = {
   };
 };
 export default function Page({ params }: Props) {
-  return <PostDetailPage postId={params['post-id']} />;
+  return <PostUpdatePage postId={params['post-id']} />;
 }

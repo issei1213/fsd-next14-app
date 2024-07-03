@@ -2,6 +2,7 @@
 
 import { z } from 'zod';
 import { redirect } from 'next/navigation';
+import { headers } from 'next/headers';
 
 import { createPost } from '@/entities/post';
 
@@ -15,9 +16,10 @@ const schema = z.object({
   }, 'Body is required'),
 });
 
-export const postCreateAction = async (prevState: any, formData: FormData) => {
+export const postUpdateAction = async (prevState: any, formData: FormData) => {
   const title = formData.get('title') as string;
   const body = formData.get('body') as string;
+  const postId = formData.get('post-id') as string;
 
   const validatedFields = schema.safeParse({
     title,
@@ -36,5 +38,5 @@ export const postCreateAction = async (prevState: any, formData: FormData) => {
     body,
   });
 
-  redirect('/');
+  redirect(`/${postId}`);
 };
